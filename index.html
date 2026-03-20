@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ku" dir="rtl">
+<html lang="ku" dir="rtl" style="background-color: #0f172a;">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Kurd Agency | Official Hub</title>
 
     <script>
@@ -10,7 +10,6 @@
       w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
     var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
     ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-
       ttq.load( 'D6SKS0RC77UCO0T900UG' ); 
       ttq.page();
     }(window, document, 'ttq');
@@ -28,51 +27,81 @@
     fbq('init', '1799292487399379'); 
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1799292487399379&ev=PageView&noscript=1"/></noscript>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <style>
-        * { box-sizing: border-box; }
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        
         body { 
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            margin: 0; 
             display: flex; 
             justify-content: center; 
             align-items: center; 
             min-height: 100vh; 
             color: white; 
+            overflow-x: hidden;
         }
+
         .glass-card { 
             width: 92%; 
             max-width: 420px; 
-            background: rgba(255, 255, 255, 0.03); 
-            padding: 45px 25px; 
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 35px 20px; 
             border-radius: 40px; 
             text-align: center; 
             border: 1px solid rgba(255, 255, 255, 0.1); 
             backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+            /* ئەنیمەیشنی خێرا بۆ کەمکردنەوەی سپی بوون */
+            animation: fadeIn 0.3s ease-in;
         }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
         h1 { 
-            font-size: 2.8rem; 
-            margin: 0 0 10px 0;
+            font-size: 2.4rem; 
+            margin-bottom: 5px;
             background: linear-gradient(to right, #facc15, #f59e0b); 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 900;
-            text-transform: uppercase;
         }
-        .agency-badge { color: #facc15; font-size: 1.1rem; margin-bottom: 25px; font-weight: bold; opacity: 0.9; }
-        .btn { display: flex; align-items: center; padding: 18px 22px; margin: 16px 0; border-radius: 20px; text-decoration: none; color: white; font-weight: 600; font-size: 1.1rem; transition: 0.4s ease; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .btn i { font-size: 1.6rem; margin-left: 15px; width: 35px; text-align: center; }
+
+        .agency-badge { color: #facc15; font-size: 1rem; margin-bottom: 20px; font-weight: bold; opacity: 0.9; }
+
+        .btn { 
+            display: flex; 
+            align-items: center; 
+            padding: 16px 20px; 
+            margin: 12px 0; 
+            border-radius: 18px; 
+            text-decoration: none; 
+            color: white; 
+            font-weight: 600; 
+            font-size: 1.05rem; 
+            transition: 0.2s; 
+            background: rgba(255, 255, 255, 0.05); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+        }
+
+        .btn i { font-size: 1.5rem; margin-left: 12px; width: 30px; text-align: center; }
         .btn span { flex-grow: 1; text-align: right; }
-        .btn:active { transform: scale(0.96); }
-        .whatsapp { color: #25D366; } .viber { color: #7360f2; } .snapchat { color: #FFFC00; } .instagram { color: #dc2743; } .telegram { color: #0088cc; }
-        .footer { margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; }
-        .footer b { color: #facc15; display: block; margin-bottom: 8px; font-size: 1.1rem; }
-        .footer p { margin: 0; font-size: 0.95rem; opacity: 0.8; line-height: 1.6; }
+        .btn:active { transform: scale(0.97); background: rgba(255, 255, 255, 0.1); }
+
+        .whatsapp { color: #25D366; } .viber { color: #7360f2; } 
+        .snapchat { color: #FFFC00; } .instagram { color: #dc2743; } 
+        .telegram { color: #0088cc; }
+
+        .footer { 
+            margin-top: 30px; 
+            border-top: 1px solid rgba(255,255,255,0.1); 
+            padding-top: 20px; 
+        }
+        .footer b { color: #facc15; display: block; margin-bottom: 5px; font-size: 1rem; }
+        .footer p { margin: 0; font-size: 0.85rem; opacity: 0.8; }
     </style>
 </head>
 <body>
